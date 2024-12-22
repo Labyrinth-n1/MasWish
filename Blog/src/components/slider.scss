@@ -1,0 +1,59 @@
+$width : 100px;
+$height: 50px;
+$font : 'Poppins';
+$primary: rgb(171, 10, 10);
+
+.Card
+{
+   
+    font-family: $font;
+    
+    &-Form
+    {
+        display: flex;
+        flex-direction: column;
+
+        &-Label
+        {
+            text-align: left;
+        }
+
+        &-Input
+        {
+           width: 500px; 
+           margin-top: 10px;
+           outline: none;
+           border: none;
+           border-bottom: 0.5px solid rgb(150, 150, 150);
+           font-family: $font;
+        }
+
+        &-Buttons
+        {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 20px;
+
+            &-BNext
+            {
+                height: $height - 20;
+                width: $height - 20;
+                border-radius: 5px;
+                margin-left: 150px;
+                text-align: center;
+                background-color: $primary;
+                color: white;
+            }  
+
+            &-BBack 
+            {
+                height: $height - 20;
+                width: $height - 20;
+                background-color: white;
+                border: 1px solid black;
+                
+            }
+        }
+    }
+}

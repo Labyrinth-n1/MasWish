@@ -1,0 +1,124 @@
+$bg : rgba(255,255,255);
+$height: 500px;
+$width: 800px;
+$border: 10px;
+
+.Carte {
+    
+    height: $height ;
+    width: $width ;
+    border-radius: $border;
+    display: flex;
+    position: relative; /* Nécessaire pour `z-index` */
+    overflow: visible; /* Autoriser les débordements */
+    background-color:gray;
+
+    &-leftPart {
+        background-color: rgb(165, 165, 165);
+        width: 45%; /* Augmentez légèrement la largeur */
+        height: 100%; /* Assurez que la hauteur est correcte */
+        border-radius: $border 0 0 $border;
+        position: relative; /* Nécessaire pour `z-index` */
+        z-index: -1; /* Envoyez en arrière-plan */
+    }
+
+    &-rightPart {
+        background-color: rgb(198, 80, 16); /* Couleur orange */
+        width: 65%; /* Ajustez la largeur si nécessaire */
+        height: 100%; /* Assurez que la hauteur est correcte */
+        border-radius: 0 $border $border 0;
+        clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+        position: relative; /* Nécessaire pour `z-index` */
+        z-index: 1; /* Amenez au premier plan */
+    }
+}
+
+
+.Profil 
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    
+
+    &-Circle
+    {
+       position: relative;
+       bottom: -350px;
+       height: 110px;
+       width: 110px;
+       background-color: #c2c2c2;
+       border-radius: 50%;
+       z-index: 3;
+       box-shadow: 4px 3px 0px 1px white;
+       background-image: url('/Blog/src/assets/images/center.png');
+    }
+}
+
+.Description
+{
+    position: relative;
+    bottom: -380px;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    
+    &-Content
+    {
+        
+        height: 100px;
+        width: 550px;
+        border-radius: 5px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &-p 
+        {
+            
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
+}
+
+.Signature
+{
+    position: relative;
+    top: -110px;
+    right: -250px;
+    z-index: 9999;
+    font-family: 'Christmas';
+    font-size: 20px;
+    
+}
+.Color
+{
+  
+}
+
+.Input
+{
+    height: 50px;
+    width: 100%;
+     font: "Poppins";
+
+   &-::placeholder
+   {
+        font-family: "Poppins";
+   }
+}
+
+.Edit 
+{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
