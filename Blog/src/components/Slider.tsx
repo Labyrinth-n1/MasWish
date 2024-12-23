@@ -21,7 +21,7 @@ function Slider() {
 
         const saveName = async () => {
             try {
-                await axios.post('http://localhost:5000/api/name', { name });
+                await axios.post('http://https:/mas-wish-backend.vercel.app/api/name', { name });
                 onNext();
             } catch (error) {
                 console.error("Erreur lors de l'enregistrement du nom", error);
@@ -64,7 +64,7 @@ function Slider() {
         useEffect(() => {
             const fetchName = async () => {
                 try {
-                    const response = await axios.get('http://localhost:5000/api/name');
+                    const response = await axios.get('http://https:/mas-wish-backend.vercel.app/api/name');
                     setName(response.data.name);
                 } catch (error) {
                     console.error("Erreur lors de la récupération du nom", error);
