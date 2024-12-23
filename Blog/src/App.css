@@ -8,3 +8,7 @@
   border-radius: 8px;
 }
 
+@font-face {
+  font-family: "Font";
+  src: url('/Blog/src/assets/fonts/Santa\'s\ Air\ Mail.ttf');
+}

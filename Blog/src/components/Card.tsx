@@ -4,6 +4,7 @@ import './Card.scss';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Card } from 'primereact/card';
+import { Badge } from 'primereact/badge';
 import ProfilDefault from '../assets/images/center.png';
 import LeftDefault from '../assets/images/left.png';
 import { Dialog } from 'primereact/dialog';
@@ -12,7 +13,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 function Cardd() {
-    const [listColors, setListColors] = useState<string[]>(['#C23683', '#F5F53A', '#C65010']);
+    const [listColors, setListColors] = useState<string[]>(['#C23683', 'rgb(171, 10, 10)', '#C65010']);
     const [selectedColorIndex, setSelectedColorIndex] = useState<number | null>(null);
     const [color, setColor] = useState<string>('');
     const [textColor, setTextColor] = useState<string>('#000');
@@ -97,7 +98,7 @@ function Cardd() {
                             width: '50px',
                             height: '50px',
                             borderRadius: '10px',
-                            border: index === selectedColorIndex ? '2px solid blue' : '2px solid transparent',
+                            border: index === selectedColorIndex ? '2px solid rgb(21, 175, 202)' : '2px solid transparent',
                             cursor: 'pointer',
                             marginLeft: '5px',
                         }}
@@ -112,10 +113,23 @@ function Cardd() {
             <Button label="Aide" icon="pi pi-external-link" onClick={() => setVisible(true)} style={{position:'relative', bottom:'-100px'}} />
             <Dialog header="Guide d'utilisation" visible={visible} style={{ width: '50vw' }} onHide={() => { if (!visible) return; setVisible(false); }}>
                 <p className="m-0">
-                    Bienvenue sur Maswish, c'est un site de personnalisation de carte de voeux pour vos proches.
-                    Pour pouvoir vous guider, il y a un modèle prédéfini, vous cliquez sur le bouton Edit, vous uploadez
-                    l'image de profil, ensuite l'image pour la partie gauche, tout en haut vous pourrez choisir la couleur pour la partie droite !!
-                    Vous écrirez le mot pour votre proche et le nom de votre proche. Ensuite téléchargez le !!
+                    Bienvenue !! 
+                    Laisse moi te guider. <br /> <br />
+                    
+                    <Badge value="1"></Badge> Tu cliques sur le bouton d'édition, <br /> 
+
+                    <Badge value="2"></Badge> Tu téléverses une photo de profil,  <br />
+
+                    <Badge value="3"></Badge> Tu téléverses une photo pour la partie gauche, <br />
+
+                    <Badge value="4"></Badge> Tu choisis une couleur tout en haut pour la partie droite,  <br />
+
+                    <Badge value="5"></Badge> Tu écris le message ( Description ), <br />
+
+                    <Badge value="6"></Badge> Et tu écris le nom/prénom du Destinataire,  <br />
+
+                    <Badge value="7" severity="success"></Badge> Ensuite tu télécharges !! 
+
                 </p>
             </Dialog>
 

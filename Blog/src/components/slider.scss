@@ -3,6 +3,16 @@ $height: 50px;
 $font : 'Poppins';
 $primary: rgb(171, 10, 10);
 
+@font-face {
+    font-family: "LanaTurner";
+    src: url('../assets/fonts/Silver\ Christmas\ -\ Personal\ Use.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Lana";
+    src: url('../assets/fonts/Christmas\ Squad\ -\ Personal\ Use.otf') format('truetype');
+}
+
 .Card
 {
    
@@ -50,10 +60,45 @@ $primary: rgb(171, 10, 10);
             {
                 height: $height - 20;
                 width: $height - 20;
-                background-color: white;
+                background-color: black;
                 border: 1px solid black;
                 
             }
         }
     }
+}
+
+
+.Welcome
+{
+    position: relative;
+    top: -50px;
+}
+
+
+.Welcome h1 
+{
+    font-family: "LanaTurner";
+    color: rgb(171, 10, 10);
+}
+
+
+
+.C1
+{ 
+    position: relative;
+    top: -32px;
+    left: -237px;
+    
+    &-img
+    {
+        height: 100px;
+    } 
+}
+
+strong
+{
+    font-family: "Lana";
+    font-size: 40px;
+
 }
