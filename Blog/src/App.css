@@ -2,14 +2,68 @@
 {
   max-width: 100%;
   padding: 2rem;
+  margin-left: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: white;
   border-radius: 8px;
+  
 }
 
 @font-face {
   font-family: "Font";
   src: url('/Blog/src/assets/fonts/Santa\'s\ Air\ Mail.ttf');
+}
+
+
+@media screen and (max-width: 279px)
+{
+   #root
+   {
+      margin-left: 10rem;
+   }
+}
+
+
+
+@media screen and (min-width: 280px) and (max-width: 379px)
+{
+   #root
+   {
+      margin-left: 15rem;
+   }
+}
+
+
+@media screen and (min-width: 380px) and (max-width:499px)
+{
+   #root
+   {
+      margin-left: 15rem;
+   }
+}
+
+@media screen and (min-width: 500px) and (max-width:609px)
+{
+   #root
+   {
+      margin-left: 17rem;
+   }
+}
+
+@media screen and (min-width: 610px) and (max-width:677px)
+{
+   #root
+   {
+      margin-left: 15rem;
+   }
+}
+
+@media screen and (min-width: 678px) and (max-width:730px)
+{
+   #root
+   {
+      margin-left: 10rem;
+   }
 }

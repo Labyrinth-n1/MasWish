@@ -103,3 +103,114 @@ strong
 
 }
 
+.e 
+{
+    position: relative;
+    top:-30px;
+    right :-230px,
+}
+
+@media screen and (min-width:180px) and (max-width: 249px)
+{
+    .Card
+    {
+        &-Form 
+        {
+            &-Input
+            {
+                width: 170px;
+            }
+
+            &-Buttons
+            {
+                &-BNext 
+                {
+                    position: relative;
+                    left: -20px;
+                }
+            }
+        }
+    }    
+
+    .e 
+    {
+        right: -80px;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width: 309px)
+{
+    .Card
+    {
+        &-Form 
+        {
+            &-Input
+            {
+                width: 200px;
+            }
+        }
+    }    
+
+    .e 
+    {
+        right: -80px;
+    }
+}
+
+@media screen and (min-width:310px) and (max-width: 369px)
+{
+    .Card
+    {
+        &-Form 
+        {
+            &-Input
+            {
+                width: 270px;
+            }
+        }
+    }    
+
+    .e 
+    {
+        right: -100px;
+    }
+}
+
+@media screen and (min-width:370px) and (max-width: 444px)
+{
+    .Card
+    {
+        &-Form 
+        {
+            &-Input
+            {
+                width: 320px;
+            }
+        }
+    }    
+
+    .e 
+    {
+        right: -150px;
+    }
+}
+
+@media screen and (min-width:445px) and (max-width: 550px)
+{
+    .Card
+    {
+        &-Form 
+        {
+            &-Input
+            {
+                width: 380px;
+            }
+        }
+    }    
+
+    .e 
+    {
+        right: -150px;
+    }
+}
+

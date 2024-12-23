@@ -62,7 +62,7 @@ function Slider() {
                     
                 />
 
-                <p style={{ position: 'relative',top:'-30px', right:'-230px'}}>{name.length}/15</p>
+                <p className='e' style={{ position: 'relative'}}>{name.length}/15</p>
                 <div className="error">
                     {name.length === 15 && <p style={{ color: 'rgb(171, 10, 10)', position:'relative', top:'-70px' }} >Essayez d'écrire un nom à 15 lettres !!</p>}
                 </div>
